@@ -1,3 +1,4 @@
+/* Body top bar styles */
 .body_container{
     width: auto;
     padding: 0;
@@ -7,23 +8,80 @@
     height: auto;
     position: relative;
     padding: 8px 4px 4px 8px;
-    display: flex;
+    display: inline;
 }
 
 .board_name {
+    margin-top: 17px;
+    float: left;
+    border-style: hidden;
 }
-
 
 .body_container_left_button {
     align-self: center;
+    margin-top: 15px;
     height: 30px;
     display: inline-block;
-    float: left;
+    border-radius: 4px;
+    background-color: white;
+    border-color: black;
 }
 
 .body_container_right_button {
     align-self: center;
+    margin-top: 15px;
     height: 30px;
     display: inline-block;
+    margin-right: auto;
     float: right;
+    border-radius: 4px;
+    background-color: white;
+    border-color: black;
+}
+
+.board_name + .body_container_left_button {
+    margin-right: 0.2%;
+}
+
+/* Board columns */
+.board_canvas {
+    width: auto;
+    padding-top: 10px;
+}
+
+.column_container {
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    height: auto;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+.board_column {
+    width: 250px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#card_container {
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    height: 310px;
+}
+
+.card_type {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 1%;
+    height: 40px;
+    border: 1px hidden;
+    background-color: white;
+    border-radius: 6px;
 }
