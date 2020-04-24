@@ -1,0 +1,29 @@
+.body_container{
+    width: auto;
+    padding: 0;
+}
+
+.body_top_bar {
+    height: auto;
+    position: relative;
+    padding: 8px 4px 4px 8px;
+    display: flex;
+}
+
+.board_name {
+}
+
+
+.body_container_left_button {
+    align-self: center;
+    height: 30px;
+    display: inline-block;
+    float: left;
+}
+
+.body_container_right_button {
+    align-self: center;
+    height: 30px;
+    display: inline-block;
+    float: right;
+}
