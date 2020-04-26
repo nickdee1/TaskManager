@@ -4,13 +4,19 @@
 		<meta charset="utf-8">
 		<title>Doc</title>
 		<style type="text/css">
-			.buttons {
-				display: inline-block;
-				margin-top: 5px;
-				margin-bottom: 5px;
-			}
 			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
 				background-color: #026aa7;
+			}
+			p.search {
+				display: inline-block;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			.buttons{
+				margin: 5px;
 			}
 			header img {
 				vertical-align: middle;
@@ -25,23 +31,21 @@
 
 	<!-- Header -->
 	<header class="header">
-			<div class="buttons">	
-				<a href="#"><img src="img/icon1.png"></a>
-				<a href="#"><img src="img/home.png"></a>
-				<div class="buttons">
-						<a class="link_text" href="#"><img src="img/boards.png">Доски</a>
-				</div>
-				<p class="buttons"><input type="search" name="search"></p>
-			</div>
-			<div class="buttons">
-				<img src="img/logo1.png" width="90	px">
-			</div>
-			<div class="buttons">
-				<a href="#"><img src="img/plus.png"></a>
-				<a href="#"><img src="img/i.png"></a>
-				<a href="#"><img src="img/bell.png"></a>
-				<a href="#"><img src="img/profile.png"></a>
-			</div>
+		<div class="buttons">
+			<a href="#"><img src="img/icon1.png" width="32px"></a>
+			<a href="#"><img src="img/home.png"></a>
+			<a class="link_text" href="#"><img src="img/boards.png">Доски</a>
+			<p class="search"><input type="search" name="search"></p>
+		</div>
+		<div class="buttons">
+			<img src="img/logo1.png" width="90px">
+		</div>
+		<div class="buttons">
+			<a href="#"><img src="img/plus.png"></a>
+			<a href="#"><img src="img/i.png"></a>
+			<a href="#"><img src="img/bell.png"></a>
+			<a href="#"><img src="img/profile.png"></a>
+		</div>
 	</header>
 
 	<!-- Body -->
