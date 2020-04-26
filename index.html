@@ -2,71 +2,108 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<title>Doc</title>
 
-		<script>
-			function add_cell() {
-				const container = document.getElementById("card_container");
-				container.innerHTML += "<div class=\"card_type\">Card2</div>"
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <script>
+            function add_cell() {
+                const container = document.getElementById("card_container");
+                container.innerHTML += "<div class=\"card_type\">Card2</div>"
+            }
+        </script>
+
+		<style type="text/css">
+			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: #026aa7;
 			}
-		</script>
-
-
-		<title></title>
+			p.search {
+				display: inline-block;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			.buttons{
+				margin: 5px;
+			}
+			header img {
+				vertical-align: middle;
+			}
+			.link_text {
+				text-decoration: none;
+				color: white;
+			}
+		</style>
 	</head>
 	<body>
 
 	<!-- Header -->
-	<header>
+	<header class="header">
+		<div class="buttons">
+			<a href="#"><img src="img/icon1.png" width="32px"></a>
+			<a href="#"><img src="img/home.png"></a>
+			<a class="link_text" href="#"><img src="img/boards.png">Доски</a>
+			<p class="search"><input type="search" name="search"></p>
+		</div>
+		<div class="buttons">
+			<img src="img/logo1.png" width="90px">
+		</div>
+		<div class="buttons">
+			<a href="#"><img src="img/plus.png"></a>
+			<a href="#"><img src="img/i.png"></a>
+			<a href="#"><img src="img/bell.png"></a>
+			<a href="#"><img src="img/profile.png"></a>
+		</div>
 	</header>
+    <!-- Body -->
+    <div class="body_container">
 
-	<!-- Body -->
-	<div class="body_container">
+        <!-- Top Bar -->
+        <div class="body_top_bar">
+            <div id="left_header_block">
+                <div class="board_name">Test Namedslfkhkdsjhfkdjs</div>
 
-		<!-- Top Bar -->
-		<div class="body_top_bar">
-			<div id="left_header_block">
-				<div class="board_name">Test Namedslfkhkdsjhfkdjs</div>
+                <div id="left_buttons">
+                    <button class="body_container_left_button">*</button>
+                    <button class="body_container_left_button">Invite</button>
+                </div>
+            </div>
 
-				<div id="left_buttons">
-					<button class="body_container_left_button">*</button>
-					<button class="body_container_left_button">Invite</button>
-				</div>
-			</div>
+            <div id="center_field">
+            </div>
 
-				<div id="center_field">
-				</div>
+            <div id="right_header_block">
+                <button class="body_container_right_button">... Show Menu</button>
+            </div>
 
-				<div id="right_header_block">
-					<button class="body_container_right_button">... Show Menu</button>
-				</div>
+        </div>
+    </div>
 
-			</div>
-		</div>
+    <!-- Canvas -->
+    <div class="board_canvas">
 
-		<!-- Canvas -->
-		<div class="board_canvas">
+        <div class="board_column">
+            <div style="left: 5px; top: 5px">Column name</div>
+            <div class="card_container">
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="column_button">Add Card</div>
+            </div>
 
-			<div class="board_column">
-				<div style="left: 5px; top: 5px">Column name</div>
-					<div class="card_container">
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="card_type">Card1</div>
-						<div class="column_button">Add Card</div>
-					</div>
+        </div>
 
-			</div>
+    </div>
+    </div>
+    <!-- End body -->
 
-		</div>
-	</div>
-	<!-- End body -->
-
-	</body>
+    </body>
 </html>
