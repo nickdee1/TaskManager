@@ -1,9 +1,11 @@
-*{
+* {
     font-family: "Avenir Next", monospace;
+    margin: 0;
 }
 
-
-
+body {
+    background-color: #85C1E9;
+}
 
 /* Body top bar styles */
 .body_container{
@@ -69,30 +71,36 @@
 /* Board columns */
 .board_canvas {
     width: auto;
-    padding-top: 3%;
+    padding-top: 0.5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: flex-start;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .board_column {
-    width: 250px;
+    width: 300px;
     height: auto;
     background-color: #eff3c6;
-    border-radius: 4px;
+    border-radius: 6px;
     position: relative;
     margin-right: 1%;
     margin-bottom: 2%;
-    box-shadow: 2px 2px #b6b7e2;
+    box-shadow: 1px 1px #e4e4e4;
+}
 
+.column_name {
+    margin-left: 12px;
+    margin-top: 10px;
 }
 
 .card_container {
     top: 5px;
-    margin-top: 35px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
     width: auto;
     height: auto;
     padding-bottom: 10%;
@@ -101,11 +109,15 @@
 .card_type {
     margin-right: 0;
     margin-left: 0;
-    margin-top: 1%;
-    height: 40px;
+    margin-top: 2%;
+    height: 30px;
     border: 1px hidden;
     background-color: white;
     border-radius: 6px;
+    box-shadow: 0 1px lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .column_button {
@@ -116,4 +128,26 @@
     justify-content: space-evenly;
     background-color: lightgray;
     border-radius: 4px;
+}
+
+#add_column_button {
+    width: 250px;
+    height: 40px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: #ededed;
+}
+
+.card_text {
+    margin-left: 1%;
+    font-size: smaller;
+    overflow: hidden;
+}
+
+.card_button {
+    width: 25px;
+    height: 25px;
+    margin-right: 1%;
+    border-radius: 4px;
+    background-color: gainsboro;
 }
