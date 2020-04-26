@@ -3,6 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Doc</title>
+
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <script>
+            function add_cell() {
+                const container = document.getElementById("card_container");
+                container.innerHTML += "<div class=\"card_type\">Card2</div>"
+            }
+        </script>
+
 		<style type="text/css">
 			.header {
 				display: flex;
@@ -47,12 +57,53 @@
 			<a href="#"><img src="img/profile.png"></a>
 		</div>
 	</header>
+    <!-- Body -->
+    <div class="body_container">
 
-	<!-- Body -->
-	<div class="body_container">
+        <!-- Top Bar -->
+        <div class="body_top_bar">
+            <div id="left_header_block">
+                <div class="board_name">Test Namedslfkhkdsjhfkdjs</div>
 
-	</div>
-	<!-- End body -->
+                <div id="left_buttons">
+                    <button class="body_container_left_button">*</button>
+                    <button class="body_container_left_button">Invite</button>
+                </div>
+            </div>
 
-	</body>
+            <div id="center_field">
+            </div>
+
+            <div id="right_header_block">
+                <button class="body_container_right_button">... Show Menu</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Canvas -->
+    <div class="board_canvas">
+
+        <div class="board_column">
+            <div style="left: 5px; top: 5px">Column name</div>
+            <div class="card_container">
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="card_type">Card1</div>
+                <div class="column_button">Add Card</div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <!-- End body -->
+
+    </body>
 </html>
