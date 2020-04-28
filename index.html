@@ -8,13 +8,24 @@
 
         <script>
             function add_cell() {
+                var counter = 1;
                 const container = document.getElementById("card_container");
-                container.innerHTML += "<div class=\"card_type\">Card2</div>"
+                container.innerHTML += "<div class=\"card_type\">Card{counter}</div>";
+                counter++;
             }
         </script>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            function add() {
+                $(document).$("").$("board_canvas").add("div").addClass("board_column");
+            }
+        </script>
+
+        <script src="index.js"></script>
+
 		<style type="text/css">
 			.header {
+
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -84,21 +95,111 @@
     <!-- Canvas -->
     <div class="board_canvas">
 
-        <div class="board_column">
-            <div class="column_name">Column name</div>
+        <div id="columns">
 
-            <div class="card_container">
-                <div class="card_type">
-                    <div class="card_text">Test card</div>
-                    <button class="card_button"></button>
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
                 </div>
-
-
-                <button class="column_button">Add Card</button>
             </div>
+
+
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
+                </div>
+            </div>
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
+                </div>
+            </div>
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
+                </div>
+            </div>
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
+                </div>
+            </div>
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
+                </div>
+            </div>
+
+
+            <div class="board_column">
+                <div class="column_name">Column name</div>
+
+                <div class="card_container">
+                    <div class="card_type">
+                        <div class="card_text">Test card</div>
+                        <button class="card_button"></button>
+                    </div>
+
+
+                    <button class="column_button" onclick="add_cell()">Add Card</button>
+                </div>
+            </div>
+
+
+
+
         </div>
 
-        <button id="add_column_button"><h4>+ Add another list</h4></button>
+
+        <button id="add_column_button" onclick="addColumn()"><h4>+ Add another list</h4></button>
 
     </div>
     </div>

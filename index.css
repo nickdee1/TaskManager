@@ -7,6 +7,9 @@ body {
     background-color: #85C1E9;
 }
 
+header + .body_container {
+}
+
 /* Body top bar styles */
 .body_container{
     width: auto;
@@ -73,10 +76,19 @@ body {
     width: auto;
     padding-top: 0.5%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     margin-left: 5px;
+
+
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#columns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-right: 5px;
 }
 
